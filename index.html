@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>File Downloader in JavaScript| CodingNepal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/flexboxgrid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Baixador de arquivos</h1>
+        <p>Cole o URL da imagem, vídeo ou pdf para fazer o download</p>
+      </header>
+      <form action="#">
+        <input type="url" placeholder="Insira a URL" required>
+        <button>Baixar</button>
+      </form>
+    </div>
+
+    <div class="results">
+        <div class="container">
+            <div class="iframe">
+                <iframe src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h1></h1>
+            </div>
+            
+            <div class="links">
+                <div class="row header">
+                    <div class="col-3">Formato</div>
+                    <div class="col-3">Qualidade</div>
+                    <div class="col-3">Tamanho</div>
+                    <div class="col-3">Download</div>
+                </div>
+                <div class="row content"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

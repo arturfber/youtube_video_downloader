@@ -1,0 +1,146 @@
+/* Import Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease;
+}
+
+body {
+  display: flex;
+  padding: 0 10px;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #4285F4;
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+.wrapper{
+  max-width: 50vw;
+  background: #fff;
+  border-radius: 7px;
+  padding: 32px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+header h1 {
+  font-size: 27px;
+  font-weight: 500;
+}
+
+header p {
+  margin-top: 5px;
+  font-size: 18px;
+  color: #474747;
+}
+
+form {
+  margin: 20px 0 27px;
+}
+
+form input {
+  width: 100%;
+  height: 60px;
+  outline: none;
+  padding: 0 17px;
+  font-size: 19px;
+  border-radius: 5px;
+  border: 1px solid #b3b2b2;
+  transition: 0.1s ease;
+  margin-top: 16px;
+}
+
+form input::placeholder {
+  color: #b3b2b2;
+}
+
+form input:focus {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
+}
+
+form button {
+  width: 100%;
+  border: none;
+  opacity: 0.7;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 17px;
+  margin-top: 20px;
+  padding: 15px 0;
+  border-radius: 5px;
+  pointer-events: none;
+  background: #4285F4;
+  transition: opacity 0.15s ease;
+}
+
+form input:valid~button {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+/* RESULTS */
+.results{
+  max-width: 80vw;
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  display: none;
+  /* max-height: 0; */
+}
+
+.results .container {
+  padding: 32px;
+}
+
+.results .iframe iframe{
+  width: 100%;
+  aspect-ratio: 21 / 9;
+}
+
+.results .iframe h1{
+  font-size: 1.5rem;
+  border-bottom: 2px solid black;
+  padding-bottom: 24px;
+  margin: 16px 0;
+}
+
+.results .links{
+  margin-top: 32px;
+  font-size: 1.5rem;
+}
+
+.results .links i{
+  color: #000;
+  margin-right: 8px;
+}
+
+.row.header{
+  text-align: center;
+  font-weight: bold;
+}
+
+.row.header > div {
+  border: 1px solid black;
+  padding: 16px 0;
+}
+
+.results .content > div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  padding: 16px 0;
+}
